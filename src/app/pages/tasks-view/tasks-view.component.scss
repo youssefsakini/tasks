@@ -1,0 +1,37 @@
+.countainer{
+    width: 930px;
+    margin-left: 210px;
+}
+
+.fa-home{
+    font-size: xx-large;
+}
+
+.add_task{
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input_div input{
+    width: 930px;
+    border: none;
+    height: 6vh;
+}
+
+input:focus {
+    outline: none;
+}
+
+.task_buttons{
+    height: 5vh;
+}
+
+.add_btn{
+    border: none;
+    border-radius: 3px;
+}
+
+.created_task{
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
