@@ -21,9 +21,7 @@
     
         <div class="bg-white">
             <ul>
-                <li class="task_hover"><i class="fa fa-bell pe-4"></i>Rappel</li>
-                <li class="task_hover"><i class="fa fa-calendar pe-4"></i> Ajouter une date d'échéance</li>
-                <li class="task_hover"><i class="fa fa-refresh pe-4"></i> Répéter</li>
+                <li *ngFor="let item of rappelItems" class="task_hover"><i [class]="item.icone +' pe-4'"></i> {{item.name}}</li>
             </ul>
         </div>
     
@@ -53,7 +51,7 @@
 
     <div class="details_bottom d-flex justify-content-between p-2 px-3">
         <i class="fa fa-arrow-right py-2" aria-hidden="true"></i>
-        <p class="py-2">Créée hier</p>
+        <p class="maj py-2">Créée hier</p>
         <i class="fa fa-trash py-2" aria-hidden="true"></i>
 
     </div>
