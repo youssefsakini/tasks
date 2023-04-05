@@ -41,4 +41,27 @@
             <i class="fa fa-star-o"></i>
         </div>
     </div>
+
+    <button (click)="toggleCollapse()" class="toggle-button my-3">
+        <span class="arrow me-4" [class.up]="isCollapsed"></span>
+        <span>{{ buttonLabel }}</span>
+      </button>
+      <div *ngIf="!isCollapsed" class="content">
+        <!-- Contenu à afficher ou à masquer -->
+        <div class="created_task d-flex flex-column ms-3 my-2">
+            <div class="d-flex justify-content-between">
+                <p class="ps-3 pt-3">Nom du tâche terminée</p>
+                <i class="fa fa-star pe-3 pt-3"></i>
+            </div>
+            <div>
+                <ul class="d-flex">
+                    <li><i class="fa fa-calendar pe-2"></i>En retard, Hier <span class="point">•</span></li>
+                    <li><i class="fa fa-file pe-2" aria-hidden="true"></i>Paper <span class="point">•</span></li>
+                    <li><i class="fa fa-paperclip pe-2"></i>Fichier Joints <span class="point">•</span></li>
+                    <li class="mt-1"><i class="fa fa-tag pe-2"></i>Orange category</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
 </div>
